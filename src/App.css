@@ -1,49 +1,278 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
 
 :root {
-  --primary-white: #fff;
-  --primary-blue: #66c6ff;
-  --primary-dark: rgba(255, 255, 255, 0);
+  --white: #fff;
+  --lightBlue: #121e26;
+  --lightBlueHover: #5eb0e0;
+  --dark: rgba(255, 255, 255, 0);
+  --darkPurple: #5b657c;
 }
 
-body {
-  font-family: "Nunito", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Abel", sans-serif !important;
 }
 
-/************************* NAV BAR ****************************/
+p {
+  font-family: "Inter", sans-serif !important;
+}
 
-.logo {
-  height: 6.25rem;
+li {
+  color: #fff;
+  text-decoration: none;
+}
+
+li:hover {
+  color: #007bff;
+}
+
+.footerHeadingText {
+  font: 36px medium Abel, sans-serif !important;
 }
 
 /************************* MENU ****************************/
 
-nav a.nav-link {
-  font-weight: 350;
-  letter-spacing: 0.0375rem;
-  cursor: pointer;
+.navbar {
+  padding-left: 10vh !important;
+  padding-right: 10vh !important;
+  z-index: 2;
+  background-color: #0e151a !important;
+  font-family: "Inter", sans-serif !important;
 }
 
-nav ul li {
+button {
+  font-family: "Abel", sans-serif !important;
+  font-size: large !important;
+  font-weight: 400 !important;
+}
+
+.navbar > a {
+  color: #fff !important;
+}
+
+.navbar > a:hover {
+  color: #007bff !important;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.navbar-toggler-icon {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+/************************* NAV BAR ****************************/
+.navigation {
+  margin: 10px 100px 20px 100px;
+  z-index: 2 !important;
+}
+
+.logo {
+  height: 4rem;
+}
+
+/************************* HEADER ****************************/
+.header-wrapper {
+  position: relative;
+  background-color: #121e26;
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: center;
+  text-align: center;
+}
+
+.main-info h1 {
+  color: var(--dark);
+}
+
+/*PARTICLES*/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
+}
+
+/************************* HEADER ****************************/
+
+.typed-text {
+  font-family: "Abel", sans-serif !important;
   text-transform: uppercase;
+  background-color: #0e151a;
+  margin-top: 100px;
+  padding: 10px 20px 10px 20px;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  color: var(--white);
+  z-index: 2;
+  text-align: c;
 }
 
-.navbar-nav > li > a {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-  color: var(--primary-white) !important;
-  border-bottom: 0.1675rem solid var(--primary-dark);
+/* BUTTON 2 */
+
+.btn2,
+.btn2:link,
+.btn2:visited {
+  z-index: 2;
+  font-family: "Abel", sans-serif !important;
+  font-size: large !important;
+  font-weight: 400 !important;
+  background-color: #0e151a;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset;
+  color: #fff;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition-property: transform;
+  transform: translateZ(0);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: 0.25s box-shadow, 0.25s transform;
 }
 
-.navbar-brand {
-  max-height: 6.25rem !important;
+.btn2:hover {
+  box-shadow: 0 0 0 28px rgba(0, 0, 0, 0.15) inset;
+  transform: translate(0.3em, 0.2em);
+  text-decoration: none;
 }
 
-.navbar-nav > li > a.active,
-.navbar-nav > li > a.active:focus {
-  border-bottom: 0.1675rem solid var(--primary-blue);
+.btn {
+  font-family: "Abel", sans-serif !important;
+  font-size: large !important;
+  font-weight: 400 !important;
 }
 
-.navbar-nav > li > a:hover {
-  border-bottom: 0.1675rem solid var(--primary-blue);
+/* Buttons at the center */
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -259px;
+  margin-left: -89px;
+  text-align: center;
+}
+
+/* General styling for the links */
+
+a {
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  margin: 20px auto;
+}
+
+/******FOOTER*****/
+
+.items {
+  align-items: center !important;
+  vertical-align: middle !important;
+}
+
+.card {
+  margin: -60px 100px 20px 100px;
+}
+
+.h4 {
+  align-items: center !important;
+  align-self: center !important;
+  text-align: center !important;
+}
+
+/*BOX CONTAINER*/
+
+.col-sm {
+  padding: 10px !important;
+}
+
+.projects {
+  margin: 10px 100px 20px 100px;
+  align-items: center;
+}
+
+.projectBox {
+  transition: box-shadow 0.3s;
+  width: 300px;
+  height: 200px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+}
+.projectBox:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+/*IMAGE*/
+.imageBox {
+  transition: box-shadow 0.3s;
+  width: auto;
+  height: auto;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+}
+.imageBox:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.middleHeadingText {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+  font: 36px medium Abel, sans-serif !important;
+  margin: 60px 100px 10px 100px;
+}
+
+.middleDescriptionText {
+  font: 18px regular Inter, sans-serif !important;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 10px 100px 10px 100px;
+}
+
+.card-title {
+  font-family: "Abel", sans-serif !important;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.card-subtitle,
+.card-text {
+  font-family: "Inter", sans-serif !important;
 }
