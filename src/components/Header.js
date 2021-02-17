@@ -11,7 +11,7 @@ export const Header = () => {
                     typeSpeed={40}
                     backSpeed={60}
                 />
-                <a href="#" class="btn2">Contact me</a>
+                <a href="#" className="btn2">Contact me</a>
             </div>
         </div >
     )
